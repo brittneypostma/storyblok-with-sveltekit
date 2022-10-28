@@ -1,7 +1,5 @@
 <script lang="ts">
 	import '../app.postcss';
-	import { useStoryblokBridge } from '@storyblok/svelte';
-	import { onMount } from 'svelte';
 	import { env } from '$env/dynamic/public';
 	import Feature from '$lib/components/feature.svelte';
 	import Grid from '$lib/components/grid.svelte';
@@ -23,11 +21,6 @@
 			teaser: Teaser
 		}
 	});
-
-	// let { story } = data;
-	// onMount(() => {
-	// 	useStoryblokBridge(story.id, (newStory) => (story = newStory));
-	// });
 </script>
 
 <main class="prose prose-xl">
