@@ -43,4 +43,10 @@
 
 <!-- <div use:storyblokEditable={story.content} /> -->
 
-<!-- {story?.content?.component} -->
+<pre>{JSON.stringify(story?.content?.body, null, 2)}</pre>
+
+<style>
+	pre {
+		max-width: 20ch;
+	}
+</style>
